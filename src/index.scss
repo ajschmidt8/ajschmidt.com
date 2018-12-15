@@ -1,0 +1,103 @@
+@import "./styles/_normalize.scss";
+@import "./styles/_mixins.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  background: linear-gradient(135deg, #000, #1c1c1c);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  line-height: 2.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.6rem;
+  max-width: 600px;
+  margin: 1.6rem auto;
+  text-align: justify;
+}
+
+.content__container {
+  margin: 0 auto;
+  padding-top: 2.4rem;
+  max-width: calc(100% - 32px);
+
+  @include breakpoint("md") {
+    margin: 0 auto;
+    padding-top: 4.8rem;
+  }
+}
+
+.content__headshot {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 2.4rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.content__title,
+.content__name {
+  text-align: center;
+}
+
+.content__name {
+  @include breakpoint("md") {
+    font-size: 2.4rem;
+  }
+}
+
+.content__title {
+  font-weight: 200;
+
+  @include breakpoint("md") {
+    font-size: 2rem;
+  }
+}
+
+.content__divider {
+  position: relative;
+  height: 1px;
+  max-width: 500px;
+  margin: 0 auto;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      white,
+      transparent
+    );
+  }
+}
+
+.content__signature {
+  max-height: 75px;
+  display: block;
+  margin: 1.6rem auto 0;
+}
+
+.content__description a {
+  color: #969696;
+
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active {
+    color: #969696;
+  }
+}
