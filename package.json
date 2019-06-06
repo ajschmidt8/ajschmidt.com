@@ -5,19 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "rimraf dist && parcel src/index.pug",
-    "build": "rimraf dist && parcel build src/index.pug"
+    "build": "rimraf dist && parcel build src/index.pug",
+    "postbuild": "cp resume.pdf dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.3.1",
-    "parcel": "^1.10.3",
+    "autoprefixer": "^9.6.0",
+    "parcel": "^1.12.3",
     "pug": "^2.0.3",
-    "sass": "^1.14.3",
+    "sass": "^1.21.0",
     "stylus": "^0.54.5"
   },
   "dependencies": {
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.3"
   }
 }
