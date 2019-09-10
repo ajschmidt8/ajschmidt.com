@@ -12,13 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "parcel": "^1.12.3",
-    "pug": "^2.0.3",
-    "sass": "^1.21.0",
-    "stylus": "^0.54.5"
-  },
-  "dependencies": {
-    "rimraf": "^2.6.3"
+    "pug": "^2.0.4",
+    "sass": "^1.22.10",
+    "rimraf": "^3.0.0"
   }
 }
