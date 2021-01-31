@@ -8,7 +8,7 @@ orbs:
 jobs: 
   shell: 
     docker:       
-      - image: ubuntu:20        
+      - image: ubuntu:20.04
     steps:       
       - run: env          
 # Orchestrate or schedule a set of jobs
