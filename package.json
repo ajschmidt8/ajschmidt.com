@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "parcel": "^1.12.4",
+    "@parcel/transformer-pug": "^2.6.1",
+    "@parcel/transformer-sass": "^2.6.1",
+    "autoprefixer": "^10.4.7",
+    "parcel": "^2.6.1",
     "pug": "^3.0.2",
     "rimraf": "^3.0.2",
-    "sass": "^1.32.5"
+    "sass": "^1.52.3"
   }
 }
