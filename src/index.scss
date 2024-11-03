@@ -56,8 +56,6 @@ p {
 }
 
 .content__title {
-  font-weight: 200;
-
   @include breakpoint("md") {
     font-size: 2rem;
   }
